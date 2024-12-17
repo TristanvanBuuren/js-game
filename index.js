@@ -4,7 +4,11 @@ let startingPosY = 0
 
 window.addEventListener('load', () => {                         // als pagina geladen is
     console.log(`De pagina is geladen!`);     
-    
+    const canvas = document.querySelector('canvas');
+    const context = canvas.getContext('2d');
+  
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
 
   
     window.addEventListener('keydown', (event) => {               // als er een toets is ingedrukt     
