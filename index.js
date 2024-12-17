@@ -4,7 +4,8 @@ let startingPosY = 0
 
 window.addEventListener('load', () => {                         // als pagina geladen is
     console.log(`De pagina is geladen!`);     
-                        
+    
+
   
     window.addEventListener('keydown', (event) => {               // als er een toets is ingedrukt     
       console.log(`Er werd een toets ingedrukt! ${event.code}`);  // laat code van toets zien
