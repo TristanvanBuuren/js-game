@@ -10,7 +10,11 @@ window.addEventListener('load', () => {                         // als pagina ge
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-  
+    context.clearRect(0, 0, canvas.width, canvas.height);
+
+    player.update(frameTime, context);
+    player.draw(context);
+
     window.addEventListener('keydown', (event) => {               // als er een toets is ingedrukt     
       console.log(`Er werd een toets ingedrukt! ${event.code}`);  // laat code van toets zien
     //   if (event.code === 'KeyS'){
